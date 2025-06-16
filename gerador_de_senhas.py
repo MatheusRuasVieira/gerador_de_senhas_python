@@ -4,13 +4,22 @@ import string
 def gerar_senha():
     #Inicio do codigo
     print("--- GERADOR DE SENHAS ---")
-    #Perguntar o tamanho da senha desejada usando Try..Except
-    try:
-        tamanho = int(input("Digite o tamanho da senha: "))
-    except ValueError:
-        print("Entrada inválida, por favor digite um número inteiro.")
-        return
-        #Perguntar preferencias que o usuário quer na senha
+    while True: #Início do loop
+        #Perguntar o tamanho da senha desejada usando Try..Except
+        try:
+            #Pedir a entrada e tentar converter para inteiro
+            tamanho_str = input("Digite o tamanho da senha (mínimo 8): ")
+            tamanho = int(tamanho_str)
+            #Verificação
+            if tamanho < 8:
+                print("Erro: O tamanho mínimo para uma senha segura é 8 caracteres. Tente novamente.")
+                continue #Volta para o início do loop
+            #Entra válida
+            break #Interrompe o loop e avança na execução
+        except ValueError:
+            print("Entrada inválida! Por favor digite um NÚMERO. Tente novamente")
+
+    #Perguntar preferencias que o usuário quer na senha
     usar_maiusculas = input("Incluir letras maiúsculas? (S/N): ").lower() == 's'
     usar_numeros = input("Incluir numeros? (S/N): ").lower() == 's'
     usar_simbolos = input("Incluir simbolos? (S/N): ").lower() == 's'

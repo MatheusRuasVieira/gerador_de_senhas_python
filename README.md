@@ -8,13 +8,13 @@ Um script de console interativo que gera senhas fortes e customizáveis. Este pr
 
 ## ✨ Funcionalidades Principais
 
-* **Comprimento Customizável:** Permite que o usuário defina o tamanho exato que a senha deve ter.
+* **Comprimento Customizável:** Permite ao usuário definir o tamanho exato da senha (com um **mínimo de 8 caracteres** para garantir a segurança).
 * **Conjunto de Caracteres Flexível:** O usuário pode escolher incluir:
     * Letras Maiúsculas
     * Números
     * Símbolos Especiais
 * **Garantia de Complexidade:** O algoritmo assegura que, se um tipo de caractere for selecionado, pelo menos um caractere daquele tipo estará presente na senha final, evitando resultados fracos por puro acaso.
-* **Robustez:** Possui tratamento de erros para garantir que o programa não quebre com entradas inválidas (ex: digitar um texto para o tamanho da senha).
+* **Robustez:** Valida a entrada do usuário em loop, garantindo que apenas valores válidos (números inteiros, >= 8) sejam aceitos sem que o programa encerre.
 
 ---
 
