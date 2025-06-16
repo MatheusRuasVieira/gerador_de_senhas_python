@@ -32,7 +32,7 @@ Para rodar este projeto na sua máquina, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/MatheusRuasVieira/gerador_de_senhas_python.git](https://github.com/MatheusRuasVieira/gerador_de_senhas_python.git)
+    git clone https://github.com/MatheusRuasVieira/gerador_de_senhas_python.git
     ```
 
 2.  **Navegue até a pasta do projeto:**
